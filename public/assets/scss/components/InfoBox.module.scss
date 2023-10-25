@@ -1,0 +1,18 @@
+@import "../variables.scss";
+
+// default
+.afc-infobox {
+    position: relative;
+	box-shadow: $shadow;
+	border-radius: $radius;
+	transition: $transition;
+}
+
+// types
+// model
+.model-1 {
+	box-shadow: 0px 12px 18px -14px rgb(189 57 255 / 70%);
+}
+
+// sizes
+// colors

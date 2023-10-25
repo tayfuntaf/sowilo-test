@@ -1,0 +1,18 @@
+.wrapper {
+	ul {
+		display: flex;
+
+		li {
+			&.active {
+				text-decoration: line-through;
+			}
+
+			&:not(:last-child) {
+				&:after {
+					content: "/";
+					padding: 0 3px;
+				}
+			}
+		}
+	}
+}

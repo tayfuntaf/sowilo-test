@@ -1,0 +1,10 @@
+@import "../variables.scss";
+
+// default
+.afc-testimonial {
+	position: relative;
+	user-select: none;
+	box-shadow: $shadow;
+	border-radius: $radius;
+}
+

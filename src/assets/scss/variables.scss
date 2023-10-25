@@ -1,0 +1,27 @@
+// colors
+$primary-color: var(--primary-color);
+$primary-color-darker: var(--primary-color-darker);
+$primary-color-opposite: var(--primary-color-opposite);
+
+$secondary-color: var(--secondary-color);
+$secondary-color-darker: var(--secondary-color-darker);
+$secondary-color-opposite: var(--secondary-color-opposite);
+
+// typography
+$text-color: var(--general-text-color);
+$background-color: var(--general-background);
+
+// general
+$shadow: var(--general-box-shadow);
+$radius: var(--general-box-radius);
+
+// transition
+$transition: all 0.3s;
+$transition-fast: all 0.15s;
+
+// breakpoints
+$sm: 640px;
+$md: 768px;
+$lg: 1024px;
+$xl: 1280px;
+$xxl: 1536px;

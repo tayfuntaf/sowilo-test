@@ -1,0 +1,27 @@
+@import "../variables.scss";
+
+// default
+.afc-portfolio {
+	line-height: 1;
+	overflow: hidden;
+	position: relative;
+	user-select: none;
+	// border-radius: $radius;
+
+	a {
+		display: block;
+	}
+}
+
+// cover
+.cover {
+	overflow: hidden;
+	position: relative;
+	user-select: none;
+	// border-radius: $radius;
+}
+
+// models
+.model-1 {
+	background-color: red;
+}

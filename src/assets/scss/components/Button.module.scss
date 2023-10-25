@@ -1,0 +1,116 @@
+@import "../variables.scss";
+
+// default
+.afc-btn {
+	position: relative;
+	text-align: center;
+	line-height: 1;
+	user-select: none;
+	white-space: nowrap;
+	box-shadow: $shadow;
+	border-radius: $radius;
+}
+
+// sizes
+.xs {
+	font-size: 12px;
+	padding: 10px 20px;
+}
+.sm {
+	font-size: 14px;
+	padding: 15px 24px;
+}
+.md {
+	font-size: 16px;
+	font-weight: 600;
+	padding: 18px 39px;
+}
+.lg {
+	font-size: 17px;
+	font-weight: 600;
+	padding: 24px 60px;
+}
+.xl {
+	font-size: 20px;
+	padding: 25px 50px;
+}
+.xxl,
+.afc-button--xl {
+}
+
+// colors
+.dark {
+	color: #fff;
+	background-color: #000;
+
+	transition: $transition;
+
+	&:hover {
+		background-color: #222;
+	}
+}
+.primary {
+	color: $primary-color-opposite;
+	background-color: $primary-color;
+
+	transition: $transition;
+
+	&:hover {
+		background-color: $primary-color-darker;
+	}
+}
+.secondary {
+	color: $secondary-color-opposite;
+	background-color: $secondary-color;
+
+	transition: $transition;
+
+	&:hover {
+		background-color: $secondary-color-darker;
+	}
+	&:focus,
+	&:active {
+	}
+}
+
+// types
+.outline-white {
+	color: #fff;
+	border: 2px solid #fff;
+
+	&:hover,
+	&:focus {
+		color: #000;
+		background-color: #fff;
+	}
+}
+
+.menu {
+	span > span {
+		width: 100%;
+		height: 2px;
+		display: block;
+		max-width: 30px;
+		position: relative;
+		margin: 7px auto;
+		background-color: #fff;
+		transition: all 0.6s cubic-bezier(0.3, 0.885, 0.32, 1);
+	}
+
+	&.active {
+		span > span {
+			&:nth-child(1) {
+				top: 10px;
+				transform: rotate(-45deg);
+			}
+			&:nth-child(2) {
+				opacity: 0;
+				transform: translate(-100%, 0);
+			}
+			&:nth-child(3) {
+				bottom: 8px;
+				transform: rotate(-135deg);
+			}
+		}
+	}
+}

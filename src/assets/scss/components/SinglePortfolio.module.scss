@@ -1,0 +1,13 @@
+@import "../variables.scss";
+
+// default
+.afc-single-portfolio {
+	overflow: hidden;
+	position: relative;
+
+	p {
+		&:not(:last-child) {
+			margin-bottom: 25px;
+		}
+	}
+}

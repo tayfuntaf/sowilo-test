@@ -1,0 +1,16 @@
+// default
+.afc-metadata {
+	line-height: 1;
+	overflow: hidden;
+	position: relative;
+	white-space: nowrap;
+
+	& > :not(:last-child) {
+		&:after {
+			content: ".";
+			opacity: 0.6;
+			padding-left: 9px;
+			padding-right: 9px;
+		}
+	}
+}

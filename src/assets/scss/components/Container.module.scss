@@ -1,0 +1,32 @@
+@import "../variables.scss";
+
+.afc-container {
+	&:not(.fluid) {
+		@media (max-width: $xxl) {
+			max-width: 1140px;
+		}
+
+		@media (max-width: $xl) {
+			max-width: 1000px;
+			padding-left: 30px;
+			padding-right: 30px;
+		}
+	}
+
+	// @media (max-width: $xxl) {
+	// }
+
+	// @media (max-width: $xl) {
+	// }
+
+	// @media (max-width: $lg) {
+	// }
+
+	@media (max-width: $md) {
+		padding-left: 18px !important;
+		padding-right: 18px !important;
+	}
+
+	// @media (max-width: $sm) {
+	// }
+}

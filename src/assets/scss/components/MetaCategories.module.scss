@@ -1,0 +1,66 @@
+@import "../variables.scss";
+
+// default
+.afc-meta-categories {
+	line-height: 1;
+
+	& > li {
+		position: relative;
+		padding-left: 40px;
+
+		& > span {
+			cursor: pointer;
+			line-height: 1;
+
+			&:before {
+				top: 7px;
+				left: 0;
+				width: 25px;
+				height: 1px;
+				content: "";
+				opacity: 0.5;
+				display: block;
+				position: absolute;
+				background-color: $text-color;
+				margin-right: 15px;
+				transition: $transition;
+			}
+		}
+
+		&:hover {
+			color: $primary-color;
+
+			& > span {
+				&:before {
+					width: 100%;
+					width: calc(100% - 39px);
+					transform: translate(38px, 0);
+					background-color: $primary-color;
+				}
+			}
+		}
+	}
+}
+
+.white {
+	& > li {
+		color: #fff;
+		transition: color 0.3s;
+
+		& > span {
+			&:before {
+				background-color: #fff;
+			}
+		}
+
+		&:hover {
+			color: #ccc;
+
+			& > span {
+				&:before {
+					background-color: #ccc;
+				}
+			}
+		}
+	}
+}

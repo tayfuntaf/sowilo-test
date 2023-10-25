@@ -1,0 +1,17 @@
+@import "../variables.scss";
+
+.afc-input[type="text"],
+.afc-input[type="email"],
+.afc-input[type="textarea"] {
+	width: 100%;
+	min-height: 44px;
+	display: block;
+	border: 1px solid #fff;
+	box-shadow: $shadow;
+	border-radius: $radius;
+	padding-left: 20px;
+	background-color: transparent;
+}
+.afc-input[type="textarea"] {
+	padding-top: 9px;
+}

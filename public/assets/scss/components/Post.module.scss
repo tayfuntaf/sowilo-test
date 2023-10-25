@@ -1,0 +1,25 @@
+@import "../variables.scss";
+
+// default
+.afc-post {
+	line-height: 1;
+	overflow: hidden;
+	position: relative;
+	user-select: none;
+
+	a {
+		display: block;
+	}
+
+	img {
+		width: 100%;
+	}
+}
+
+// cover
+.cover {
+	overflow: hidden;
+	position: relative;
+	user-select: none;
+	border-radius: $radius;
+}

@@ -1,0 +1,61 @@
+@import "../variables.scss";
+
+.afc-pagination {
+	ul {
+		display: flex;
+		list-style: none;
+		position: relative;
+		padding: 0;
+		margin: 0;
+
+		li {
+			line-height: 36px;
+
+			& > * {
+				display: block;
+				line-height: 1;
+			}
+		}
+	}
+
+	&.style-1 {
+		ul {
+			height: 36px;
+			text-align: center;
+			justify-content: center;
+
+			li {
+				height: 36px;
+
+				& > * {
+					height: 36px;
+					display: block;
+					line-height: 39px;
+
+					&.prev,
+                    &.next {
+						margin-left: 15px;
+						margin-right: 15px;
+					}
+
+					&:not(.prev),
+					&:not(.next) {
+						width: 36px;
+						height: 36px;
+						display: block;
+						overflow: hidden;
+						text-align: center;
+						border-radius: 50px;
+					}
+				}
+
+				&.current {
+					& > * {
+                        color: #fff;
+                        background-color: #000;
+                    }
+				}
+			}
+		}
+	}
+}

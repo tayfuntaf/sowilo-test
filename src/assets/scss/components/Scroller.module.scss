@@ -1,0 +1,55 @@
+@import "../animations.scss";
+
+.afc-scroller {
+	position: relative;
+
+	&__el {
+		width: 30px;
+		height: 45px;
+		margin: auto;
+		position: relative;
+		border-radius: 25px;
+		border: 1px solid #000;
+
+		&:before {
+			top: calc(100% + 15px);
+			left: 0;
+			right: 0;
+			width: 1px;
+			height: 55px;
+			content: "";
+			margin: auto;
+			position: absolute;
+			background-color: #000;
+		}
+
+		span {
+			top: 9px;
+			left: 0;
+			right: 0;
+			margin: auto;
+			position: absolute;
+			width: 2px;
+			height: 9px;
+			display: block;
+			border-radius: 3px;
+			background-color: #000;
+			animation: scroll 1.2s cubic-bezier(0.15, 0.41, 0.69, 0.94) infinite;
+		}
+	}
+
+	&.white {
+		.afc-scroller__el {
+			border: 1px solid #fff;
+	
+			&:before {
+				background-color: #fff;
+			}
+	
+			span {
+				background-color: #fff;
+			}
+		}
+	
+	}
+}
